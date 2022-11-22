@@ -2,6 +2,7 @@
 passenger_name_list = []
 destination = []
 number_of_passengers = []
+#imports
 import time
 import os
 #Defining function
@@ -27,13 +28,24 @@ while start == True:
         location = input("Firstly, where are you looking to fly to out of our available destinations. (Type: Auckland, Wellington, Rotorua or fares to see their standared costs): ")
         if location == 'auckland':
             destination.append(location)
+            print("thank you for chosing %s" % location)
             time.sleep(2)
-            print("hi")
+            start = False
+            disscount = True
+            break
         elif location == 'wellington':
             destination.append(location)
+            print("thank you for chosing %s" % location)
             time.sleep(2)
-            print("hi wellington")
-        elif location == 'Rotorua':
+            start = False
+            disscount = True
+            break
+        elif location == 'rotorua':
             destination.append(location)
+            print("thank you for chosing %s" % location)
             time.sleep(2)
-            print("hi Rotorua")
+            start = False
+            disscount = True
+            break
+def discount():
+    
